@@ -18,7 +18,7 @@ func main() {
 
 	array1 = append(array1, array2...)
 	fmt.Println("cap = ", cap(array1), "  ", array1)
-	changeSlicePtr(&array1)
+	changeSlice(array1)
 	fmt.Println("cap = ", cap(array1), "  ", array1)
 
 	//pointer := &array1[6]
