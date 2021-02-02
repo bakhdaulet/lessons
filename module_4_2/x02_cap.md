@@ -1,0 +1,1 @@
+![CAP theorem](z01_cap.png)
