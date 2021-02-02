@@ -11,6 +11,11 @@ func f1(n int) int {
 }
 
 func f2(n int) int {
+	//cover test
+	//if n > 0 {
+	//	return 0
+	//}
+
 	if n == 0 {
 		return 0
 	}
@@ -35,3 +40,5 @@ func s1(s string) int {
 func s2(s string) int {
 	return len(s)
 }
+
+

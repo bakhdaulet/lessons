@@ -2,6 +2,12 @@ package testMe
 
 import "testing"
 
+//go test x01_testMe.go x01_testMe_test.go -v
+//go test x01_testMe.go x01_testMe_test.go -cover
+//go test x01_testMe.go x01_testMe_test.go -coverprofile=coverage.out
+//go tool cover -func=coverage.out
+//go tool cover -html=coverage.out
+
 func TestF1(t *testing.T) {
 	if f1(0) != 0 {
 		t.Error(`f1(0) != 0`)

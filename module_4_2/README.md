@@ -1,7 +1,7 @@
 # Agenda #
 - Test
 - CAP
-- postgreSql
+- connect to DB (postgreSql)
 - Interface
 - GOF patterns
 - Concurrency patterns 
