@@ -147,7 +147,7 @@ func Test_record(t *testing.T) {
 	if rr.Body.String() != "<h3 align=\"center\">1, John, Doe</h3>\n" {
 		t.Errorf("Wrong server response!")
 	}
-	drop_table()
+	//drop_table()
 }
 
 //http://go-database-sql.org/

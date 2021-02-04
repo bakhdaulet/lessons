@@ -12,9 +12,9 @@ func f1(n int) int {
 
 func f2(n int) int {
 	//cover test
-	//if n > 0 {
-	//	return 0
-	//}
+	if n > 0 {
+		return 0
+	}
 
 	if n == 0 {
 		return 0
