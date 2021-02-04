@@ -1,12 +1,12 @@
 package main
 
 import (
-"database/sql"
-"fmt"
-_ "github.com/lib/pq"
-"net/http"
-"os"
-"time"
+	"database/sql"
+	"fmt"
+	_ "github.com/lib/pq"
+	"net/http"
+	"os"
+	"time"
 )
 
 func myHandler(w http.ResponseWriter, r *http.Request) {
@@ -27,7 +27,7 @@ func getData(w http.ResponseWriter, r *http.Request) {
 	fmt.Printf("Serving: %s\n", r.URL.Path)
 	fmt.Printf("Served: %s\n", r.Host)
 
-	connStr := "user=postgres dbname=s2 sslmode=disable"
+	connStr := "user=bakhdauletshalbayev dbname=bakhdauletshalbayev sslmode=disable"
 	db, err := sql.Open("postgres", connStr)
 	if err != nil {
 		fmt.Fprintf(w, "<h1 align=\"center\">%s</h1>", err)
