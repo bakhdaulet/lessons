@@ -1,0 +1,2 @@
+The Future design pattern (also called Promise) is a quick and easy way to achieve concurrent structures for asynchronous programming. We will take advantage of first class functions in Go to develop Futures.
+![future](z01_future.png)
