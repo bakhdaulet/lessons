@@ -101,3 +101,8 @@ func usageFor(fs *flag.FlagSet, short string) func() {
 		fmt.Fprintf(os.Stderr, "\n")
 	}
 }
+
+//curl --user name:password http://www.example.com
+//curl -XPOST -d'{"a":1,"b":2}' localhost:8081/sum
+//
+//

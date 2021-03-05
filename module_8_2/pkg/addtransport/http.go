@@ -23,6 +23,7 @@ func NewHTTPHandler(endpoints addendpoint.Set, logger log.Logger) http.Handler {
 
 	m := http.NewServeMux()
 	m.Handle("/sum", httptransport.NewServer(
+		//AuthMiddleware("name", "password","Example Realm" )(endpoints.SumEndpoint),
 		endpoints.SumEndpoint,
 		decodeHTTPSumRequest,
 		encodeHTTPGenericResponse,
